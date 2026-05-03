@@ -28,7 +28,7 @@ public class FirstServlet extends HttpServlet {
         session.setAttribute("email", email);
         session.setAttribute("password", password);
 
-        session.setMaxInactiveInterval(10); // session expired here within 10 seconds
+        //session.setMaxInactiveInterval(10); // session expired here within 10 seconds
 
         req.getRequestDispatcher("/second-servlet").forward(req, res);
 
