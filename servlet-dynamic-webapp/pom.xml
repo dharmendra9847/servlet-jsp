@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.servlet.dynamic.webap</groupId>
-  <artifactId>servlet-dynamic-webap</artifactId>
+  <groupId>com.servlet.dynamic.webapp</groupId>
+  <artifactId>servlet-dynamic-webapp</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>servlet-dynamic-webap Maven Webapp</name>
@@ -14,8 +14,14 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.1.0</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
-    <finalName>servlet-dynamic-webap</finalName>
+    <finalName>servlet-dynamic-webapp</finalName>
   </build>
 </project>

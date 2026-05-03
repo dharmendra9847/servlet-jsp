@@ -18,14 +18,24 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String name = req.getParameter("username");
         String city = req.getParameter("city");
 
-        PrintWriter writer = resp.getWriter();
 
-        writer.println("<h1>Hello " + name + "!</h1>");
-        writer.println("<p>I know you're from " + city + "!</p>");
+        // 1. Process data (e.g., save to a database or print to console)
+        System.out.println("User: " + name + " from " + city + " has registered.");
 
-        writer.close();
+        // 2. Perform the redirect
+        // Use the name of your JSP file.
+        // Adding a parameter lets the JSP know to show the success modal!
+        resp.sendRedirect("registration.jsp?status=success");
+
+        //PrintWriter writer = resp.getWriter();
+
+        //writer.println("<h1>Hello " + name + "!</h1>");
+        //writer.println("<p>I know you're from " + city + "!</p>");
+
+        //writer.close();
     }
 }
