@@ -1,4 +1,4 @@
-package com.servlet.requestdespatch;
+package com.servlet.requestdispatcher;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
