@@ -1,0 +1,36 @@
+---
+
+### 2. `.gitignore`
+It is essential to ignore compiled files and IDE settings so your repo stays clean.
+
+```gitignore
+# Compiled class files
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE Specific (IntelliJ)
+.idea/
+*.iml
+out/
+
+# IDE Specific (Eclipse)
+.settings/
+.project
+.classpath
+bin/
+
+# Log files
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
